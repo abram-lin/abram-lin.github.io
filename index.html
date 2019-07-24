@@ -83,7 +83,7 @@
                             </div>
                             
                             <div class="post-content">
-                                重开博客，往后多读书，多写作。……
+                                去年加入的公司解散了，重新组建了新的公司，被派到了珠海，四个月来忙于业务，每天早九晚十一，完全没有个人充电的时间。终于，产品要上线了。 近半年……
                             </div>
                             <p class="readmore"><a href="https://yanghai.site/posts/2019-07-23-writing-again/">阅读全文</a></p>
                         </article>
@@ -125,9 +125,7 @@ I am Abram, write Java.……
                             </div>
                             
                             <div class="post-content">
-                                系统：macOS High Sierra（10.13.3）
-使用brew安装wget brew install wget  使用下面命令下载网页
-wget -p -k -e robots=off -U 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.6) Gecko/20070802 SeaMonkey/1.1.4' https://www.google.com  ……
+                                系统：macOS High Sierra（10.13.3） 使用brew安装wget brew install wget 使用下面命令下载网页 wget -p -k -e robots=off -U 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.6) Gecko/20070802 SeaMonkey/1.1.4' https://www.google.com……
                             </div>
                             <p class="readmore"><a href="https://yanghai.site/posts/2018-05-13-%E4%BD%BF%E7%94%A8wget%E4%B8%8B%E8%BD%BD%E6%95%B4%E4%B8%AA%E7%BD%91%E9%A1%B5imgcssjs/">阅读全文</a></p>
                         </article>
@@ -152,83 +150,9 @@ wget -p -k -e robots=off -U 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.6)
                             </div>
                             
                             <div class="post-content">
-                                创建新的SSH密钥，并添加到ssh-agent 创建密钥
-ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;  输入保存密钥的绝对路径和文件名，如/Users/Steve/.ssh/new_id_rsa
-Enter a file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]  两次输入确认密钥的密码
-Enter passphrase (empty for no passphrase): [Type a passphrase] Enter same passphrase again: [Type passphrase again]  把密钥添加到ssh-agent
-把ssh-agent在后台启动
-eval &quot;$(ssh-agent -s)&quot;  配置~/.ssh/config文件，如果没有该文件，通过touch config命令创建。注意HostName github.com
-Host github.com HostName github.com AddKeysToAgent yes UseKeychain yes IdentityFile ~/.ssh/new_id_rsa  把私钥添加到ssh-agent并存入keychain，执行命令会要求你输入密码
-ssh-add -K ~/.ssh/new_id_rsa  添加SSH公钥到你的GitHub账户 把公钥复制到剪贴板……
+                                创建新的SSH密钥，并添加到ssh-agent 创建密钥 ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot; 输入保存密钥的绝对路径和文件名，如/Users/Steve/.ssh/n……
                             </div>
                             <p class="readmore"><a href="https://yanghai.site/posts/2018-04-23-github%E5%A4%9A%E8%B4%A6%E6%88%B7%E5%8F%8Assh%E5%AF%86%E9%92%A5%E9%85%8D%E7%BD%AE/">阅读全文</a></p>
-                        </article>
-                    
-                        <article class="post">
-                            <header>
-                                <h1 class="post-title">
-                                    <a href="https://yanghai.site/posts/2018-04-16-%E5%91%8A%E5%88%AB%E8%BF%85%E9%9B%B7aria2%E5%AE%89%E8%A3%85%E5%B9%B6%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8/" title="告别迅雷，aria2安装并设置开机启动" >告别迅雷，aria2安装并设置开机启动</a>
-                                </h1>
-                            </header>
-                            <date class="post-meta meta-date">
-                                2018年4月16日
-                            </date>
-                            
-                            <div class="post-meta">
-                                <span>|</span>
-                                
-                                <span class="meta-category"><a href="https://yanghai.site/categories/%E6%8A%80%E6%9C%AF">技术</a></span>
-                                
-                                <span class="meta-category"><a href="https://yanghai.site/categories/%E8%BD%AF%E4%BB%B6">软件</a></span>
-                                
-                            </div>
-                            
-                            <div class="post-content">
-                                系统：macOS High Sierra（10.13.3）
-国内的下载工具，一点都不纯粹，总要植入广告、商城等等无关的功能，像某度网盘这种还会搞限速，很烦。好在有Aria2这神器。Aria2 是一款轻量的、支持多协议以及多线程的下载工具，它同时支持了 HTTP/HTTPS, FTP, SFTP, BitTorrent 和 Metalink 多种下载方式。它是用命令行交互的，但是已经有人为它开发了交互界面，不用担心太难操作。下面跟着步骤来，安装成功后从此告别限速。
-1.安装Homebrew Homebrew是macOS上著名的包管理工具,它可以方便地对应用以及各种插件进行管理。确保已经安装Xcode后在Terminal（终端）执行以下命令：
-/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;  更新Homebrew，依次执行下面命令
-brew update  brew upgrade  2.安装aria2 brew install aria2  配置aria2，依次执行下面命令
-cd ~  mkdir .aria2  cd .aria2  touch aria2.conf  注意配置文件要放在上面的路径上（~/.aria2/aria2.conf），aria2在执行时会检查这个路径，如果这个路径存在配置文件，就不用自己再指定配置文件了。这样还能方便设置开机自启动aria2。
-修改配置文件
-打开Finder（访达），按下组合键Shift+Cmd+G，输入Shift+Cmd+G，回车，双击打开aria2.conf文件，填入下面的配置，参考：
-## 文件保存相关 ## # 文件的保存路径 (可使用绝对路径或相对路径), 默认: 当前启动位置 dir=/Users/自己的用户名/Downloads # 启用磁盘缓存, 0 为禁用缓存, 需 1.16 以上版本, 默认:16M #disk-cache=32M # 文件预分配方式, 能有效降低磁盘碎片, 默认:prealloc # 预分配所需时间: none &lt; falloc ?……
-                            </div>
-                            <p class="readmore"><a href="https://yanghai.site/posts/2018-04-16-%E5%91%8A%E5%88%AB%E8%BF%85%E9%9B%B7aria2%E5%AE%89%E8%A3%85%E5%B9%B6%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8/">阅读全文</a></p>
-                        </article>
-                    
-                        <article class="post">
-                            <header>
-                                <h1 class="post-title">
-                                    <a href="https://yanghai.site/posts/2018-04-11-%E6%8E%A7%E5%88%B6macos%E7%9A%84%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8/" title="控制macOS的开机启动" >控制macOS的开机启动</a>
-                                </h1>
-                            </header>
-                            <date class="post-meta meta-date">
-                                2018年4月11日
-                            </date>
-                            
-                            <div class="post-meta">
-                                <span>|</span>
-                                
-                                <span class="meta-category"><a href="https://yanghai.site/categories/%E6%8A%80%E6%9C%AF">技术</a></span>
-                                
-                                <span class="meta-category"><a href="https://yanghai.site/categories/%E8%BD%AF%E4%BB%B6">软件</a></span>
-                                
-                            </div>
-                            
-                            <div class="post-content">
-                                Mac开机启动的配置与其他类Unix系统相比较麻烦，Linux配置rc.local文件即可。 macOS系统上开机启动这个叫法不准确，应该叫“自启动”或者“登录时启动”。macOS上启动项可分为登陆项（Login Items）和启动项（Startup Items）。Login items在用户登录后立即启动并一直运行，直到用户退出登录或者手动终止才会停止运行。Startup items苹果官方不推荐再使用，Startup items在系统装载的最后阶段启动。详见官方文档。
-下面简要介绍如何配置自启动项。
-使用登录项添加自启动项 这种方式支持有用户界面的程序。 进入设置-&gt;用户与群组-&gt;登录项，点击+号找到想自动启动的软件，选择后按确定即可。
-删除自启动项，重新进入登录项，选中目标项点击减号后确定即可。
-使用launchctl工具添加启动项 从OS X 10.4 Tiger开始，Apple要求开发者使用launch daemons and agents配置自启动项，launch daemons和launch agents由launchd进程管理。launchd是macOS下用于初始化系统环境的关键进程，它是内核装载成功之后在OS环境下启动的第一个进程。采用这种方式来配置自启动项只需要一个plist文件，该plist文件存在于以下目录，各目录决定了其启动的先后和拥有的权限： ~/Library/LaunchAgents //特定用户登录后以当前用户启动，第三方程序一般都放这里 /Library/LaunchAgents //任一用户登录后以当前用户启动，管理员使用 /System/Library/LaunchAgents //系统组件，任一用户登录后以当前用户启动 /Library/LaunchDaemons //系统装载时以root用户启动，管理员使用 /System/Library/LaunchDaemons //系统组件，系统装载时以root用户启动
-目录区别： /System/Library //存放Apple开发的系统组件。 /Library //存放系统管理员安装的程序。 ~/Library //存放普通用户安装的程序。
-launch daemon和launch agents区别： 它们本质上都是守护进程，launch daemons在系统装载时启动，属于所有用户；launch agents是某个用户拥有的程序，在这个用户登录后启动。
-创建plist文件
-vi ~/Library/LaunchAgents/aria2.plist  写入以下xml
-&lt;?xml version=&quot;1.0&quot;encoding=&quot;utf-8&quot;?&gt; &lt;!DOCTYPE plist PUBLIC&quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt; &lt;plist version=&quot;1.0&quot;&gt; &lt;dict&gt; &lt;key&gt;KeepAlive&lt;/key&gt; &lt;true/&gt; &lt;key&gt;RunAtLoad&lt;/key&gt; &lt;true/&gt; &lt;key&gt;Label&lt;/key&gt; &lt;string&gt;aria2&lt;/string&gt; &lt;key&gt;ProgramArguments&lt;/key&gt; &lt;array&gt; &lt;string&gt;/usr/local/bin/aria2c&lt;/string&gt; &lt;string&gt;-D&lt;/string&gt; &lt;/array&gt; &lt;key&gt;WorkingDirectory&lt;/key&gt; &lt;string&gt;/Users/Roy/Downloads&lt;/string&gt; &lt;/dict&gt; &lt;/plist&gt;  键值说明见launchd.……
-                            </div>
-                            <p class="readmore"><a href="https://yanghai.site/posts/2018-04-11-%E6%8E%A7%E5%88%B6macos%E7%9A%84%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8/">阅读全文</a></p>
                         </article>
                     
                         <article class="post">
@@ -251,34 +175,9 @@ vi ~/Library/LaunchAgents/aria2.plist  写入以下xml
                             </div>
                             
                             <div class="post-content">
-                                 系统：macOS High Sierra（10.13.3）
-软件安装方式 1.dmg文件安装 2.App Store安装（卸载方法与dmg文件安装一致） 3.pkg安装包安装 4.Homebrew等包管理器安装
-具体卸载方法 卸载dmg文件安装的软件 dmg是苹果电脑上专用的磁盘镜像（disk image）文件，类似于Windows平台上的iso镜像，dmg类似于一个压缩文档，支持压缩与加密，将程序与文档打包成dmg是一种比较流行的软件发布形式。
-macOS下的程序，通常不像Windows电脑下的那么复杂，不会有注册表，DLL什么的。找出安装dmg时创建的文件，删除掉这些文件即可把软件卸载干净。安装dmg一般创建了这些文件：/Applications目录中的主程序；~/Library/Preferences/目录中后缀名为“.plist”的配置文件；软件处理的数据文件，图片处理软件一般在~/Pictures目录找，其他程序一般在~/Documents目录找。找出这些文件删除即可。
-卸载pkg安装包安装的软件 不同的操作系统都有专属于自己的软件安装包格式。如Ubuntu系统上的deb安装包，Windows系统上的msi安装包等。 macOS系统一般使用dmg发布软件；当App有一些特定的需求，比如：向系统配置面板写配置程序、安装屏幕保护程序、读写特定的目录与文件等，才会使用pkg软件安装包格式。 pkg文件安装的软件卸载较麻烦，需要借助命令行。 安装的 pkg 软件包，都记录在以下
-/Library/Receipts/InstallHistory.plist /private/var/db/receipts  列出已经安装的pkg，显示的是pkg的ID
-$ pkgutil --pkgs  查看目标pkg的信息
-$ pkgutil --pkg-info pkg-name  由pkgutil &ndash;pkg-info获取到的location地址，删除即可。以上图为例
-$ sudo rm -r /usr/local/aria2  删除安装包记录
-$ sudo pkgutil --forget aria2  卸载Homebrew安装的软件 $ brew uninstall app-name  ……
+                                系统：macOS High Sierra（10.13.3） 软件安装方式 1.dmg文件安装 2.App Store安装（卸载方法与dmg文件安装一致） 3.pkg安装……
                             </div>
                             <p class="readmore"><a href="https://yanghai.site/posts/2018-04-02-mac-os%E4%B8%8B%E5%A6%82%E4%BD%95%E6%8A%8A%E8%BD%AF%E4%BB%B6%E5%8D%B8%E8%BD%BD%E5%B9%B2%E5%87%80/">阅读全文</a></p>
-                        </article>
-                    
-                        <article class="post">
-                            <header>
-                                <h1 class="post-title">
-                                    <a href="https://yanghai.site/posts/2018-03-29-2017%E5%B9%B4%E7%83%AD%E9%97%A8%E5%9F%8E%E5%B8%82%E7%A9%BA%E6%B0%94%E8%B4%A8%E9%87%8F%E7%BB%9F%E8%AE%A1/" title="2017年热门城市空气质量统计" >2017年热门城市空气质量统计</a>
-                                </h1>
-                            </header>
-                            <date class="post-meta meta-date">
-                                2018年3月29日
-                            </date>
-                            
-                            <div class="post-content">
-                                ……
-                            </div>
-                            <p class="readmore"><a href="https://yanghai.site/posts/2018-03-29-2017%E5%B9%B4%E7%83%AD%E9%97%A8%E5%9F%8E%E5%B8%82%E7%A9%BA%E6%B0%94%E8%B4%A8%E9%87%8F%E7%BB%9F%E8%AE%A1/">阅读全文</a></p>
                         </article>
                     
                         <article class="post">
@@ -299,17 +198,9 @@ $ sudo pkgutil --forget aria2  卸载Homebrew安装的软件 $ brew uninstall ap
                             </div>
                             
                             <div class="post-content">
-                                ♳ Polyethylene terephthalate（PET）聚对苯二甲酸乙二酯 使用：耐热至65℃，耐冷至-20℃，只适合装暖饮或冻饮，装高温液体、或加热则易变形，有对人体有害的物质融出。并且，科学家发现，1号塑料品用了10个月后，可能释放出致癌物DEHP，对睾丸具有毒性。
-因此，饮料瓶等用完了就丢掉，不要再用来做为水杯，或者用来做储物容器乘装其他物品，以免引发健康问题得不偿失。
-注意：饮料瓶别循环使用装热水。不能放在汽车内晒太阳；不要装酒、油等物质。
-♴ High Density Polyethylene （HDPE）高密度聚乙烯 使用：清洁用品、沐浴产品的包装。可在小心清洁后重复使用，但这些容器通常不好清洗，残留原有的清洁用品，变成细菌的温床，你最好不要循环使用。不要再用来做为水杯，或者用来做储物容器装其他物品。 注意：很难彻底清洁，建议不要循环使用
-♵ Polyvinyl chloride（PVC）聚氯乙烯 使用：常见雨衣、建材、塑料膜、塑料盒等。很少用于食品包装。这种材质可塑性优良，价钱便宜，故使用很普遍。只能耐热81 ℃，高温时容易产生有害物质，甚至连制造的过程中都会释放有毒物。若随食物进入人体，可能引起乳癌、新生儿先天缺陷等疾病。这种材料的容器已经较少用于包装食品。如果使用，千万不要让它受热。难清洗易残留，不要循环使用。若装饮品不要购买。 注意： 不可用于食品的包装。
-♶Low Density Polyethylene （LDPE）低密度聚乙烯 使用：常见保鲜膜、塑料膜等。耐热性不强，通常，合格的PE保鲜膜在遇温度超过110 ℃时会出现热熔现象，会留下一些人体无法分解的塑料制剂。食物中的油脂也很容易将保鲜膜中的有害物质溶解出来。因此，食物放入微波炉，先要取下包裹着的保鲜膜。高温时产生有害物质，有毒物随食物进入人体后，可能引起乳腺癌、新生儿先天缺陷等疾病。 注意：用微波炉加热，别用保鲜膜包裹食物。
-♷ Polypropylene（PP）聚丙烯 使用：常用于豆浆瓶、优酪乳瓶、果汁饮料瓶、微波炉餐盒。常见熔点高达167 ℃，是唯一可以安全放进微波炉的塑料盒，可在小心清洁后重复使用。需要特别注意，一些微波炉餐盒，盒体的确以5号PP制造（微波炉专用PP耐高温120℃，耐低温-20℃），但因造价成本高，盖子一般不使用专用PP却以1号PET制造，由于PET不能抵受高温，故不能与盒体一并放进微波炉。为保险起见，容器放入微波炉前，先把盖子取下。 注意：放入微波炉时，把盖子取下。
-♸ Polystyrene（PS）聚苯乙烯 使用：常用于碗装泡面盒、快餐盒，别用微波炉煮碗装方便面 。又耐热又抗寒，但不能放进微波炉中，以免因温度过高而释出化学物（耐温70℃时即释放出）。并且不能用于盛装强酸（如柳橙汁）、强碱性物质，因为会分解出对人体不好的聚苯乙烯，容易致癌。因此，您要尽量避免用快餐盒打包滚烫的食物。
-注意：别用微波炉煮碗装方便面。
-Polyethylene（PE）聚乙烯 是日常生活中最常用高分子材料之一，大量用于制造塑料袋，塑料薄膜，牛奶桶的产品，也是白色污染的主要原因。分高密度聚乙烯（HDPE），低密度聚乙烯（LDPE）等。
-Polycarbonate（PC）聚碳酸酯 使用：被大量使用的一种材料，尤其多用于奶瓶中，因为含有双酚A而备受争议。……
+                                <h3 id="polyethylene-terephthalate-pet-聚对苯二甲酸乙二酯">♳ Polyethylene terephthalate（PET）聚对苯二甲酸乙二酯</h3>
+
+<p>使用：耐热至65℃，耐冷至-20℃，只适合装暖饮或冻饮，装高温液体、或加热则易变形，有对人体有害的物质融出。并且，科学家发现，1号塑料品用了10个月后，可能释放出致癌物DEHP，对睾丸具有毒性。</p>……
                             </div>
                             <p class="readmore"><a href="https://yanghai.site/posts/2018-03-26-%E5%B8%B8%E8%A7%81%E5%A1%91%E6%96%99%E5%88%86%E7%B1%BB/">阅读全文</a></p>
                         </article>
@@ -336,44 +227,76 @@ Polycarbonate（PC）聚碳酸酯 使用：被大量使用的一种材料，尤�
                             </div>
                             
                             <div class="post-content">
-                                《全神贯注的方法》书摘
-1.这个过程中我发现，世上根本没有失败这回事，每一次所谓失败，其实都是在告诉我们哪些做法行得通，哪些做法行不通，仅此而已。 2.首先你需要学会自我觉察，当你变得不耐烦时，你要觉察到自己正变得不耐烦。听起来很简单，但大多数时候，当变得不耐烦时，我们就会被这种情绪控制，根本意识不到自己正变得焦虑。而如果你懂得自我觉察，能“看到”自己的情绪变化，你就可以选择不做情绪的木偶，能摆脱情绪的影响，真正地掌控自我。
-3.锻炼是健康生活的一部分，它不是一件有终点的事，冥想也是如此。
-4.他会非常紧张，觉得这件事特别难。因为他对这件事的心态变了，所以他觉得任务难度骤然加大，变得几乎不可能完成了。其实我们都知道，任务跟刚才并无两样，是他对这件事的看法引发了恐惧心理，从而影响了他的能力发挥。
-5.当我们感觉某件事有难度时，说明我们正在突破自己的极限，此时一旦跨越这道门槛，你就进步了。
-6.你的目标应该激励你努力前行，而不是告诉你距离目标还差多远。一旦明白这个道理，实现目标的旅程就会充满快乐！
-7.所以关键在于设定目标时要从实际出发。设定目标是一门艺术，它至关重要，甚至能决定我们在实现目标过程中能否保持专注。
-8.如果总是去想着未来会发生什么事，比如说做完这件事你会有多开心，或者做完这个你就可以得到什么，你就不可能专心投入。
-9.而且也不是说绝对不买那些自己不太需要但也能买得起的东西。你可能并不一定要去某个地方度假，但你一直梦想能去那里看看；你可能并不一定需要某份新工作，但你想要接受一下新挑战。遇到这种情况时，你需要做的是作为一个旁观者来观察自己当时的内心活动，并搞清楚为什么会有这种感受。这样你才能做出理智的选择。一旦改变视角，你就可以变得清醒，不受情绪影响。
-10.世界上所有人，无论贫富，都会有一种不圆满感，这很正常。正是因为这种感觉，人类的商业活动才会如此发达，才会出现各式各样的广告。
-11.她曾路过太平洋上一些岛国，按照我们所谓“文明社会”的标准，这里的人们简直一无所有，但他们却可以把所有东西拿出来跟大家分享，每个人从早到晚都很开心。她问他们，如果突然拥有100万美金，你们会做什么？他们回答，我们没想过这个问题，因为我们什么都不缺。相比之下，劳拉则来自一个永不满足的世界，她的同类每天都想着换更大的房子，换更高级的车，赚更多的钱。劳拉发现，原来人还可以有完全不同的活法，而且这种活法显然更开心……
+                                《全神贯注的方法》书摘 1.这个过程中我发现，世上根本没有失败这回事，每一次所谓失败，其实都是在告诉我们哪些做法行得通，哪些做法行不通，仅此而……
                             </div>
                             <p class="readmore"><a href="https://yanghai.site/posts/2018-03-21-%E5%A5%89%E4%B8%8A%E9%A6%99%E9%83%81%E8%90%A5%E5%85%BB%E9%B8%A1%E6%B1%A4%E4%B8%80%E4%BB%BD/">阅读全文</a></p>
+                        </article>
+                    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
+                                    <a href="https://yanghai.site/posts/2016-12-04-%E7%A7%91%E5%AD%A6%E7%9A%84%E6%9C%AC%E8%B4%A8/" title="科学的本质" >科学的本质</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2016年12月4日
+                            </date>
+                            
+                            <div class="post-meta">
+                                <span>|</span>
+                                
+                                <span class="meta-category"><a href="https://yanghai.site/categories/%E8%AE%A4%E7%9F%A5">认知</a></span>
+                                
+                            </div>
+                            
+                            <div class="post-content">
+                                科学的本质是什么？私以为是确定性。伪科学相反，常常拿不确定的事物做文章，牵强附会。 科学不是万能的，无所不知的。科学无法解释的事物，常常会滋生……
+                            </div>
+                            <p class="readmore"><a href="https://yanghai.site/posts/2016-12-04-%E7%A7%91%E5%AD%A6%E7%9A%84%E6%9C%AC%E8%B4%A8/">阅读全文</a></p>
+                        </article>
+                    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
+                                    <a href="https://yanghai.site/posts/2016-05-07-%E6%95%B0%E5%AD%A6%E5%8F%AA%E6%98%AF%E4%B8%80%E4%B8%AA%E5%B7%A5%E5%85%B7/" title="数学只是一个工具" >数学只是一个工具</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2016年5月7日
+                            </date>
+                            
+                            <div class="post-meta">
+                                <span>|</span>
+                                
+                                <span class="meta-category"><a href="https://yanghai.site/categories/%E6%95%B0%E5%AD%A6">数学</a></span>
+                                
+                            </div>
+                            
+                            <div class="post-content">
+                                数学是人类发明的工具。这个工具有使用价值，为了让它能更好地发挥作用，先人们不断对它进行补充、完善，发展成了如今这个庞然大物。 数学是一个伟大的……
+                            </div>
+                            <p class="readmore"><a href="https://yanghai.site/posts/2016-05-07-%E6%95%B0%E5%AD%A6%E5%8F%AA%E6%98%AF%E4%B8%80%E4%B8%AA%E5%B7%A5%E5%85%B7/">阅读全文</a></p>
+                        </article>
+                    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
+                                    <a href="https://yanghai.site/archives/" title="归档" >归档</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                1年1月1日
+                            </date>
+                            
+                            <div class="post-content">
+                                ……
+                            </div>
+                            <p class="readmore"><a href="https://yanghai.site/archives/">阅读全文</a></p>
                         </article>
                     
                     
 
 
-
-<ol class="page-navigator">
-    
-
-    
-    <li  class="current">
-        <a href="https://yanghai.site/">1</a>
-    </li>
-    
-    <li >
-        <a href="https://yanghai.site/page/2/">2</a>
-    </li>
-    
-
-    
-    <li class="next">
-        <a href="https://yanghai.site/page/2/">下一页</a>
-    </li>
-    
-</ol>
 
 
 
@@ -407,19 +330,7 @@ Polycarbonate（PC）聚碳酸酯 使用：被大量使用的一种材料，尤�
     </li>
     
     <li>
-        <a href="https://yanghai.site/posts/2018-04-16-%E5%91%8A%E5%88%AB%E8%BF%85%E9%9B%B7aria2%E5%AE%89%E8%A3%85%E5%B9%B6%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8/" title="告别迅雷，aria2安装并设置开机启动">告别迅雷，aria2安装并设置开机启动</a>
-    </li>
-    
-    <li>
-        <a href="https://yanghai.site/posts/2018-04-11-%E6%8E%A7%E5%88%B6macos%E7%9A%84%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8/" title="控制macOS的开机启动">控制macOS的开机启动</a>
-    </li>
-    
-    <li>
         <a href="https://yanghai.site/posts/2018-04-02-mac-os%E4%B8%8B%E5%A6%82%E4%BD%95%E6%8A%8A%E8%BD%AF%E4%BB%B6%E5%8D%B8%E8%BD%BD%E5%B9%B2%E5%87%80/" title="Mac-OS下如何把软件卸载干净？">Mac-OS下如何把软件卸载干净？</a>
-    </li>
-    
-    <li>
-        <a href="https://yanghai.site/posts/2018-03-29-2017%E5%B9%B4%E7%83%AD%E9%97%A8%E5%9F%8E%E5%B8%82%E7%A9%BA%E6%B0%94%E8%B4%A8%E9%87%8F%E7%BB%9F%E8%AE%A1/" title="2017年热门城市空气质量统计">2017年热门城市空气质量统计</a>
     </li>
     
     <li>
@@ -432,6 +343,10 @@ Polycarbonate（PC）聚碳酸酯 使用：被大量使用的一种材料，尤�
     
     <li>
         <a href="https://yanghai.site/posts/2016-12-04-%E7%A7%91%E5%AD%A6%E7%9A%84%E6%9C%AC%E8%B4%A8/" title="科学的本质">科学的本质</a>
+    </li>
+    
+    <li>
+        <a href="https://yanghai.site/posts/2016-05-07-%E6%95%B0%E5%AD%A6%E5%8F%AA%E6%98%AF%E4%B8%80%E4%B8%AA%E5%B7%A5%E5%85%B7/" title="数学只是一个工具">数学只是一个工具</a>
     </li>
     
 </ul>
@@ -448,7 +363,7 @@ Polycarbonate（PC）聚碳酸酯 使用：被大量使用的一种材料，尤�
     </li>
     
     <li>
-        <a href="https://yanghai.site/categories/%E6%8A%80%E6%9C%AF/">技术(5)</a>
+        <a href="https://yanghai.site/categories/%E6%8A%80%E6%9C%AF/">技术(3)</a>
     </li>
     
     <li>
@@ -472,7 +387,7 @@ Polycarbonate（PC）聚碳酸酯 使用：被大量使用的一种材料，尤�
     </li>
     
     <li>
-        <a href="https://yanghai.site/categories/%E8%BD%AF%E4%BB%B6/">软件(5)</a>
+        <a href="https://yanghai.site/categories/%E8%BD%AF%E4%BB%B6/">软件(3)</a>
     </li>
     
     <li>
@@ -502,11 +417,7 @@ Polycarbonate（PC）聚碳酸酯 使用：被大量使用的一种材料，尤�
     
     <a href="https://yanghai.site/tags/%E6%95%B0%E5%AD%A6/">数学</a>
     
-    <a href="https://yanghai.site/tags/%E6%95%B0%E6%8D%AE/">数据</a>
-    
     <a href="https://yanghai.site/tags/%E7%94%9F%E6%B4%BB/">生活</a>
-    
-    <a href="https://yanghai.site/tags/%E7%A9%BA%E6%B0%94%E8%B4%A8%E9%87%8F/">空气质量</a>
     
     <a href="https://yanghai.site/tags/%E7%AC%94%E8%AE%B0/">笔记</a>
     
@@ -515,8 +426,6 @@ Polycarbonate（PC）聚碳酸酯 使用：被大量使用的一种材料，尤�
     <a href="https://yanghai.site/tags/%E8%AE%A4%E7%9F%A5/">认知</a>
     
     <a href="https://yanghai.site/tags/%E8%AF%BB%E4%B9%A6/">读书</a>
-    
-    <a href="https://yanghai.site/tags/%E9%85%8D%E7%BD%AE/">配置</a>
     
     <a href="https://yanghai.site/tags/%E9%9A%8F%E7%AC%94/">随笔</a>
     

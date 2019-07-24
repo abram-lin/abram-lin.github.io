@@ -19,14 +19,7 @@
       <pubDate>Mon, 23 Apr 2018 17:13:45 +0000</pubDate>
       <author>abram.lin.me@gmail.com (Abram)</author>
       <guid>https://yanghai.site/posts/2018-04-23-github%E5%A4%9A%E8%B4%A6%E6%88%B7%E5%8F%8Assh%E5%AF%86%E9%92%A5%E9%85%8D%E7%BD%AE/</guid>
-      <description>创建新的SSH密钥，并添加到ssh-agent 创建密钥
-ssh-keygen -t rsa -b 4096 -C &amp;quot;your_email@example.com&amp;quot;  输入保存密钥的绝对路径和文件名，如/Users/Steve/.ssh/new_id_rsa
-Enter a file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]  两次输入确认密钥的密码
-Enter passphrase (empty for no passphrase): [Type a passphrase] Enter same passphrase again: [Type passphrase again]  把密钥添加到ssh-agent
-把ssh-agent在后台启动
-eval &amp;quot;$(ssh-agent -s)&amp;quot;  配置~/.ssh/config文件，如果没有该文件，通过touch config命令创建。注意HostName github.com
-Host github.com HostName github.com AddKeysToAgent yes UseKeychain yes IdentityFile ~/.ssh/new_id_rsa  把私钥添加到ssh-agent并存入keychain，执行命令会要求你输入密码
-ssh-add -K ~/.ssh/new_id_rsa  添加SSH公钥到你的GitHub账户 把公钥复制到剪贴板</description>
+      <description>创建新的SSH密钥，并添加到ssh-agent 创建密钥 ssh-keygen -t rsa -b 4096 -C &amp;quot;your_email@example.com&amp;quot; 输入保存密钥的绝对路径和文件名，如/Users/Steve/.ssh/n</description>
     </item>
     
   </channel>

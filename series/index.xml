@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on 仰海的比特记忆</title>
+    <link>https://yanghai.site/series/</link>
+    <description>Recent content in Series on 仰海的比特记忆</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>abram.lin.me@gmail.com (Abram)</managingEditor>
+    <webMaster>abram.lin.me@gmail.com (Abram)</webMaster>
+    
+	<atom:link href="https://yanghai.site/series/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
