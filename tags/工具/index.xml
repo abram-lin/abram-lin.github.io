@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>工具 on 仰海的比特记忆</title>
+    <link>https://yanghai.site/tags/%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 工具 on 仰海的比特记忆</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>abram.lin.me@gmail.com (Abram)</managingEditor>
+    <webMaster>abram.lin.me@gmail.com (Abram)</webMaster>
+    <lastBuildDate>Sun, 13 May 2018 20:46:37 +0000</lastBuildDate>
+    
+	<atom:link href="https://yanghai.site/tags/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用wget下载整个网页（img，CSS，js）</title>
+      <link>https://yanghai.site/posts/2018-05-13-%E4%BD%BF%E7%94%A8wget%E4%B8%8B%E8%BD%BD%E6%95%B4%E4%B8%AA%E7%BD%91%E9%A1%B5imgcssjs/</link>
+      <pubDate>Sun, 13 May 2018 20:46:37 +0000</pubDate>
+      <author>abram.lin.me@gmail.com (Abram)</author>
+      <guid>https://yanghai.site/posts/2018-05-13-%E4%BD%BF%E7%94%A8wget%E4%B8%8B%E8%BD%BD%E6%95%B4%E4%B8%AA%E7%BD%91%E9%A1%B5imgcssjs/</guid>
+      <description>系统：macOS High Sierra（10.13.3）
+使用brew安装wget brew install wget  使用下面命令下载网页
+wget -p -k -e robots=off -U &#39;Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.6) Gecko/20070802 SeaMonkey/1.1.4&#39; https://www.google.com  </description>
+    </item>
+    
+  </channel>
+</rss>

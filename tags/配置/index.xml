@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>配置 on 仰海的比特记忆</title>
+    <link>https://yanghai.site/tags/%E9%85%8D%E7%BD%AE/</link>
+    <description>Recent content in 配置 on 仰海的比特记忆</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>abram.lin.me@gmail.com (Abram)</managingEditor>
+    <webMaster>abram.lin.me@gmail.com (Abram)</webMaster>
+    <lastBuildDate>Wed, 11 Apr 2018 20:10:45 +0000</lastBuildDate>
+    
+	<atom:link href="https://yanghai.site/tags/%E9%85%8D%E7%BD%AE/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>控制macOS的开机启动</title>
+      <link>https://yanghai.site/posts/2018-04-11-%E6%8E%A7%E5%88%B6macos%E7%9A%84%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8/</link>
+      <pubDate>Wed, 11 Apr 2018 20:10:45 +0000</pubDate>
+      <author>abram.lin.me@gmail.com (Abram)</author>
+      <guid>https://yanghai.site/posts/2018-04-11-%E6%8E%A7%E5%88%B6macos%E7%9A%84%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8/</guid>
+      <description>Mac开机启动的配置与其他类Unix系统相比较麻烦，Linux配置rc.local文件即可。 macOS系统上开机启动这个叫法不准确，应该叫“自启动”或者“登录时启动”。macOS上启动项可分为登陆项（Login Items）和启动项（Startup Items）。Login items在用户登录后立即启动并一直运行，直到用户退出登录或者手动终止才会停止运行。Startup items苹果官方不推荐再使用，Startup items在系统装载的最后阶段启动。详见官方文档。
+下面简要介绍如何配置自启动项。
+使用登录项添加自启动项 这种方式支持有用户界面的程序。 进入设置-&amp;gt;用户与群组-&amp;gt;登录项，点击+号找到想自动启动的软件，选择后按确定即可。
+删除自启动项，重新进入登录项，选中目标项点击减号后确定即可。
+使用launchctl工具添加启动项 从OS X 10.4 Tiger开始，Apple要求开发者使用launch daemons and agents配置自启动项，launch daemons和launch agents由launchd进程管理。launchd是macOS下用于初始化系统环境的关键进程，它是内核装载成功之后在OS环境下启动的第一个进程。采用这种方式来配置自启动项只需要一个plist文件，该plist文件存在于以下目录，各目录决定了其启动的先后和拥有的权限： ~/Library/LaunchAgents //特定用户登录后以当前用户启动，第三方程序一般都放这里 /Library/LaunchAgents //任一用户登录后以当前用户启动，管理员使用 /System/Library/LaunchAgents //系统组件，任一用户登录后以当前用户启动 /Library/LaunchDaemons //系统装载时以root用户启动，管理员使用 /System/Library/LaunchDaemons //系统组件，系统装载时以root用户启动
+目录区别： /System/Library //存放Apple开发的系统组件。 /Library //存放系统管理员安装的程序。 ~/Library //存放普通用户安装的程序。
+launch daemon和launch agents区别： 它们本质上都是守护进程，launch daemons在系统装载时启动，属于所有用户；launch agents是某个用户拥有的程序，在这个用户登录后启动。
+创建plist文件
+vi ~/Library/LaunchAgents/aria2.plist  写入以下xml
+&amp;lt;?xml version=&amp;quot;1.0&amp;quot;encoding=&amp;quot;utf-8&amp;quot;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC&amp;quot;-//Apple//DTD PLIST 1.0//EN&amp;quot; &amp;quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;quot;&amp;gt; &amp;lt;plist version=&amp;quot;1.0&amp;quot;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;KeepAlive&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;key&amp;gt;RunAtLoad&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;key&amp;gt;Label&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;aria2&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;ProgramArguments&amp;lt;/key&amp;gt; &amp;lt;array&amp;gt; &amp;lt;string&amp;gt;/usr/local/bin/aria2c&amp;lt;/string&amp;gt; &amp;lt;string&amp;gt;-D&amp;lt;/string&amp;gt; &amp;lt;/array&amp;gt; &amp;lt;key&amp;gt;WorkingDirectory&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;/Users/Roy/Downloads&amp;lt;/string&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt;  键值说明见launchd.</description>
+    </item>
+    
+  </channel>
+</rss>
