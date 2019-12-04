@@ -8,10 +8,19 @@
     <language>zh-CN</language>
     <managingEditor>abram.lin.me@gmail.com (Abram)</managingEditor>
     <webMaster>abram.lin.me@gmail.com (Abram)</webMaster>
-    <lastBuildDate>Tue, 23 Jul 2019 14:46:03 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 03 Dec 2019 21:01:39 +0800</lastBuildDate>
     
 	<atom:link href="https://yanghai.site/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java如何打印日志</title>
+      <link>https://yanghai.site/posts/2019-12-03-java-log-convention/</link>
+      <pubDate>Tue, 03 Dec 2019 21:01:39 +0800</pubDate>
+      <author>abram.lin.me@gmail.com (Abram)</author>
+      <guid>https://yanghai.site/posts/2019-12-03-java-log-convention/</guid>
+      <description>以下为《正确的打日志姿势》学习笔记。 什么时候打日志 1.程序出现问题，只能通过 debug 功能来定位问题，很大程度是日志没打好。良好的系统，通过日志就能</description>
+    </item>
     
     <item>
       <title>新的博客</title>
