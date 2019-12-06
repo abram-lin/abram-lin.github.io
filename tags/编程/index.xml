@@ -8,10 +8,19 @@
     <language>zh-CN</language>
     <managingEditor>abram.lin.me@gmail.com (Abram)</managingEditor>
     <webMaster>abram.lin.me@gmail.com (Abram)</webMaster>
-    <lastBuildDate>Tue, 03 Dec 2019 21:01:39 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 05 Dec 2019 20:38:28 +0800</lastBuildDate>
     
 	<atom:link href="https://yanghai.site/tags/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>maven小tip</title>
+      <link>https://yanghai.site/posts/2019-12-05-maven-tip/</link>
+      <pubDate>Thu, 05 Dec 2019 20:38:28 +0800</pubDate>
+      <author>abram.lin.me@gmail.com (Abram)</author>
+      <guid>https://yanghai.site/posts/2019-12-05-maven-tip/</guid>
+      <description>maven 是 Java 平台上的自动化构建工具。maven 可以解决以下问题： 1.便于庞大项目的管理和分工协作。庞大项目仅用 package 划分模块是不够的，借助 maven 可以把项目</description>
+    </item>
     
     <item>
       <title>Java如何打印日志</title>
