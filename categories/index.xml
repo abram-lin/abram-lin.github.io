@@ -8,10 +8,28 @@
     <language>zh-CN</language>
     <managingEditor>abram.lin.me@gmail.com (Abram)</managingEditor>
     <webMaster>abram.lin.me@gmail.com (Abram)</webMaster>
-    <lastBuildDate>Thu, 05 Dec 2019 20:38:28 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 17 Dec 2019 19:37:25 +0800</lastBuildDate>
     
 	<atom:link href="https://yanghai.site/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS</title>
+      <link>https://yanghai.site/categories/js/</link>
+      <pubDate>Tue, 17 Dec 2019 19:37:25 +0800</pubDate>
+      <author>abram.lin.me@gmail.com (Abram)</author>
+      <guid>https://yanghai.site/categories/js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>https://yanghai.site/categories/web/</link>
+      <pubDate>Tue, 17 Dec 2019 19:37:25 +0800</pubDate>
+      <author>abram.lin.me@gmail.com (Abram)</author>
+      <guid>https://yanghai.site/categories/web/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Java</title>
