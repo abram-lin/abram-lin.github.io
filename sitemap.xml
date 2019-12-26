@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://yanghai.site/categories/</loc>
-    <lastmod>2019-12-17T20:30:00+08:00</lastmod>
+    <lastmod>2019-12-26T20:26:48+08:00</lastmod>
   </url>
   
   <url>
@@ -19,21 +19,21 @@
   
   <url>
     <loc>https://yanghai.site/posts/</loc>
-    <lastmod>2019-12-17T20:30:00+08:00</lastmod>
+    <lastmod>2019-12-26T20:26:48+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://yanghai.site/tags/</loc>
+    <lastmod>2019-12-26T20:26:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yanghai.site/tags/web/</loc>
     <lastmod>2019-12-17T20:30:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://yanghai.site/categories/web/</loc>
-    <lastmod>2019-12-17T20:30:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yanghai.site/tags/web/</loc>
     <lastmod>2019-12-17T20:30:00+08:00</lastmod>
   </url>
   
@@ -44,42 +44,42 @@
   
   <url>
     <loc>https://yanghai.site/</loc>
-    <lastmod>2019-12-17T20:30:00+08:00</lastmod>
+    <lastmod>2019-12-26T20:26:48+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://yanghai.site/tags/java/</loc>
-    <lastmod>2019-12-06T13:08:35+08:00</lastmod>
+    <lastmod>2019-12-26T20:26:48+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://yanghai.site/categories/java/</loc>
-    <lastmod>2019-12-06T13:08:35+08:00</lastmod>
+    <lastmod>2019-12-26T20:26:48+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://yanghai.site/categories/maven/</loc>
-    <lastmod>2019-12-06T13:08:35+08:00</lastmod>
+    <lastmod>2019-12-26T20:26:48+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://yanghai.site/tags/maven/</loc>
-    <lastmod>2019-12-06T13:08:35+08:00</lastmod>
+    <lastmod>2019-12-26T20:26:48+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://yanghai.site/posts/2019-12-05-maven-tip/</loc>
-    <lastmod>2019-12-06T13:08:35+08:00</lastmod>
+    <lastmod>2019-12-26T20:26:48+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://yanghai.site/categories/%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2019-12-06T13:08:35+08:00</lastmod>
+    <lastmod>2019-12-26T20:26:48+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://yanghai.site/tags/%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2019-12-06T13:08:35+08:00</lastmod>
+    <lastmod>2019-12-26T20:26:48+08:00</lastmod>
   </url>
   
   <url>
@@ -163,12 +163,12 @@
   </url>
   
   <url>
-    <loc>https://yanghai.site/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <loc>https://yanghai.site/tags/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2019-07-24T11:56:56+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanghai.site/tags/%E7%94%9F%E6%B4%BB/</loc>
+    <loc>https://yanghai.site/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2019-07-24T11:56:56+08:00</lastmod>
   </url>
   
