@@ -4,12 +4,47 @@
   
   <url>
     <loc>https://yanghai.site/categories/</loc>
-    <lastmod>2019-12-26T20:26:48+08:00</lastmod>
+    <lastmod>2020-06-20T23:28:03+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanghai.site/tags/js/</loc>
-    <lastmod>2019-12-17T20:30:00+08:00</lastmod>
+    <loc>https://yanghai.site/posts/</loc>
+    <lastmod>2020-06-20T23:28:03+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yanghai.site/tags/</loc>
+    <lastmod>2020-06-20T23:28:03+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yanghai.site/</loc>
+    <lastmod>2020-06-20T23:28:03+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yanghai.site/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
+    <lastmod>2020-06-20T23:28:03+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yanghai.site/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
+    <lastmod>2020-06-20T23:28:03+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yanghai.site/posts/2020-04-27-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</loc>
+    <lastmod>2020-06-20T23:28:03+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yanghai.site/posts/2020-04-25-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6hidden%E5%B1%9E%E6%80%A7%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2020-06-20T22:43:12+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yanghai.site/posts/2020-04-19-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%8D%E5%90%8C%E9%A1%B5%E9%9D%A2%E4%BC%A0%E5%8F%82%E6%95%B0%E6%8D%AE/</loc>
+    <lastmod>2020-06-20T23:20:11+08:00</lastmod>
   </url>
   
   <url>
@@ -18,13 +53,8 @@
   </url>
   
   <url>
-    <loc>https://yanghai.site/posts/</loc>
-    <lastmod>2019-12-26T20:26:48+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yanghai.site/tags/</loc>
-    <lastmod>2019-12-26T20:26:48+08:00</lastmod>
+    <loc>https://yanghai.site/tags/js/</loc>
+    <lastmod>2019-12-17T20:30:00+08:00</lastmod>
   </url>
   
   <url>
@@ -43,7 +73,7 @@
   </url>
   
   <url>
-    <loc>https://yanghai.site/</loc>
+    <loc>https://yanghai.site/categories/java/</loc>
     <lastmod>2019-12-26T20:26:48+08:00</lastmod>
   </url>
   
@@ -53,17 +83,12 @@
   </url>
   
   <url>
-    <loc>https://yanghai.site/categories/java/</loc>
+    <loc>https://yanghai.site/tags/maven/</loc>
     <lastmod>2019-12-26T20:26:48+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://yanghai.site/categories/maven/</loc>
-    <lastmod>2019-12-26T20:26:48+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yanghai.site/tags/maven/</loc>
     <lastmod>2019-12-26T20:26:48+08:00</lastmod>
   </url>
   
@@ -123,12 +148,12 @@
   </url>
   
   <url>
-    <loc>https://yanghai.site/tags/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://yanghai.site/categories/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2019-07-24T11:56:50+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanghai.site/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://yanghai.site/tags/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2019-07-24T11:56:50+08:00</lastmod>
   </url>
   
@@ -193,12 +218,12 @@
   </url>
   
   <url>
-    <loc>https://yanghai.site/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://yanghai.site/categories/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2019-07-24T11:56:32+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanghai.site/categories/%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://yanghai.site/tags/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2019-07-24T11:56:32+08:00</lastmod>
   </url>
   
@@ -223,12 +248,12 @@
   </url>
   
   <url>
-    <loc>https://yanghai.site/categories/%E8%AE%A4%E7%9F%A5/</loc>
+    <loc>https://yanghai.site/tags/%E8%AE%A4%E7%9F%A5/</loc>
     <lastmod>2019-07-24T11:56:27+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yanghai.site/tags/%E8%AE%A4%E7%9F%A5/</loc>
+    <loc>https://yanghai.site/categories/%E8%AE%A4%E7%9F%A5/</loc>
     <lastmod>2019-07-24T11:56:27+08:00</lastmod>
   </url>
   
